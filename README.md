@@ -7,10 +7,10 @@ the third pipeline calculates all TFs with the tool DiffTF
    epi_trajectory.py -> metacell_detection.py -> pipe_metacell.sh
   
    input parameter:
-     -m matrix
-     -b barcodes
-     -p peaks
-     -c cells
+     -m matrix\t
+     -b barcodes\t
+     -p peaks\t
+     -c cells\t
     
    Anwendungsbeispiel:
      python3 epi_trajectory.py -m matrix.mtx -b barcodes.tsv -p peaks.bed -c 30
