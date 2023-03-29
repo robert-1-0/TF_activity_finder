@@ -4,7 +4,7 @@ the second pipeline creates the tranjectory inference<br />
 the third pipeline calculates all TFs with the tool DiffTF<br />
 
 1. pipeline<br />
-&nbsp;&nbsp;   epi_trajectory.py -> metacell_detection.py -> pipe_metacell.sh
+&nbsp;&nbsp;&nbsp;   epi_trajectory.py -> metacell_detection.py -> pipe_metacell.sh
   
    input parameter:<br />
     &nbsp;&nbsp; -m matrix <br />
@@ -13,20 +13,20 @@ the third pipeline calculates all TFs with the tool DiffTF<br />
     &nbsp;&nbsp; -c cells <br />
     
    Anwendungsbeispiel:<br />
-   &nbsp;&nbsp;  python3 epi_trajectory.py -m matrix.mtx -b barcodes.tsv -p peaks.bed -c 30
+   &nbsp;&nbsp;&nbsp;  python3 epi_trajectory.py -m matrix.mtx -b barcodes.tsv -p peaks.bed -c 30
     
  2. pipeline<br />
- &nbsp;&nbsp;   via_pipe.py
+ &nbsp;&nbsp;&nbsp;   via_pipe.py
     
     input parameter: <br />
     &nbsp;&nbsp;  -a anndata<br />
     &nbsp;&nbsp;  -c rootcluster<br />
   
     Anwendungsbeispiel:<br />
-    &nbsp;&nbsp;  python3 via_pipe.py -a adata.h5ad -c 6
+    &nbsp;&nbsp;&nbsp;  python3 via_pipe.py -a adata.h5ad -c 6
       
  3. pipeline<br />
- &nbsp;&nbsp;   diffTF_bam_peak.sh -> diffTF_config_data.sh
+ &nbsp;&nbsp;&nbsp;   diffTF_bam_peak.sh -> diffTF_config_data.sh
     
     input parameter:<br />
     &nbsp;&nbsp;  -diff path/of/diffTF<br />
@@ -41,4 +41,4 @@ the third pipeline calculates all TFs with the tool DiffTF<br />
     &nbsp;&nbsp;  -queue ('sesame_street')<br />
       
     Anwendungsbeispiel:<br />
-    &nbsp;&nbsp;  bash diffTF_bam_pipe.sh -diff /path/to/my/local/diffTF/folder -bam path/to/bam/file -c1 1 -c2 9 -cpath path/to/created/clusters/from/pipe1 -ref hg19 -cores 20 -pairedend true -slurm true -queue sesame_street
+    &nbsp;&nbsp;&nbsp;  bash diffTF_bam_pipe.sh -diff /path/to/my/local/diffTF/folder -bam path/to/bam/file -c1 1 -c2 9 -cpath path/to/created/clusters/from/pipe1 -ref hg19 -cores 20 -pairedend true -slurm true -queue sesame_street
