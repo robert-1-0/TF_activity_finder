@@ -1,9 +1,9 @@
-There are three scripts that are called, all other scripts call each other.
-The first pipeline creates all clusters and metacells
-the second pipeline creates the tranjectory inference
-the third pipeline calculates all TFs with the tool DiffTF
+There are three scripts that are called, all other scripts call each other.<br />
+The first pipeline creates all clusters and metacells<br />
+the second pipeline creates the tranjectory inference<br />
+the third pipeline calculates all TFs with the tool DiffTF<br />
 
-1. pipeline
+1. pipeline<br />
    epi_trajectory.py -> metacell_detection.py -> pipe_metacell.sh
   
    input parameter:<br />
@@ -15,7 +15,7 @@ the third pipeline calculates all TFs with the tool DiffTF
    Anwendungsbeispiel:<br />
      python3 epi_trajectory.py -m matrix.mtx -b barcodes.tsv -p peaks.bed -c 30
     
- 2. pipeline
+ 2. pipeline<br />
     via_pipe.py
     
     input parameter: <br />
@@ -25,7 +25,7 @@ the third pipeline calculates all TFs with the tool DiffTF
     Anwendungsbeispiel:<br />
       python3 via_pipe.py -a adata.h5ad -c 6
       
- 3. pipeline
+ 3. pipeline<br />
     diffTF_bam_peak.sh -> diffTF_config_data.sh
     
     input parameter:<br />
