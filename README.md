@@ -7,7 +7,7 @@ the third pipeline calculates all TFs with the tool DiffTF<br />
    epi_trajectory.py -> metacell_detection.py -> pipe_metacell.sh
   
    input parameter:<br />
-     -m matrix <br />
+         -m matrix <br />
      -b barcodes <br />
      -p peaks <br />
      -c cells <br />
