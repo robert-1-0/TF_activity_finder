@@ -12,7 +12,7 @@ the third pipeline calculates all TFs with the tool DiffTF<br />
     &nbsp;&nbsp; -p peaks <br />
     &nbsp;&nbsp; -c cells <br />
     
-   Anwendungsbeispiel:<br />
+   Application example:<br />
    &nbsp;&nbsp;&nbsp;  python3 epi_trajectory.py -m matrix.mtx -b barcodes.tsv -p peaks.bed -c 30
     
  2. pipeline<br />
@@ -22,7 +22,7 @@ the third pipeline calculates all TFs with the tool DiffTF<br />
     &nbsp;&nbsp;  -a anndata<br />
     &nbsp;&nbsp;  -c rootcluster<br />
   
-    Anwendungsbeispiel:<br />
+    Application example:<br />
     &nbsp;&nbsp;&nbsp;  python3 via_pipe.py -a adata.h5ad -c 6
       
  3. pipeline<br />
@@ -40,5 +40,5 @@ the third pipeline calculates all TFs with the tool DiffTF<br />
     &nbsp;&nbsp;  -slurm (true,false)<br />
     &nbsp;&nbsp;  -queue ('sesame_street')<br />
       
-    Anwendungsbeispiel:<br />
+    Application example:<br />
     &nbsp;&nbsp;&nbsp;  bash diffTF_bam_pipe.sh -diff /path/to/my/local/diffTF/folder -bam path/to/bam/file -c1 1 -c2 9 -cpath path/to/created/clusters/from/pipe1 -ref hg19 -cores 20 -pairedend true -slurm true -queue sesame_street
